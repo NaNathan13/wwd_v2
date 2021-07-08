@@ -1,0 +1,14 @@
+.twitch_cta_sidebar_section {
+  .twitch_cta_sidebar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a.cta_btn {
+      background-color: $twitch;
+      width: 100%;
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+  }
+}
