@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 ?>
@@ -16,20 +16,20 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			Wilson_Web_development_posted_on();
-			Wilson_Web_development_posted_by();
+			wilson_web_development_posted_on();
+			wilson_web_development_posted_by();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php Wilson_Web_development_post_thumbnail(); ?>
+	<?php wilson_web_development_post_thumbnail(); ?>
 
 	<div class="entry-summary">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php Wilson_Web_development_entry_footer(); ?>
+		<?php wilson_web_development_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -10,7 +10,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 get_header();
@@ -23,7 +23,7 @@ get_header();
 		</div>
 
 		<div class="page_content_container">
-			
+			home page
 		</div>
 
 	</div>

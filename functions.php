@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 if (!defined('_S_VERSION')) {
@@ -13,7 +13,7 @@ if (!defined('_S_VERSION')) {
 	define('_S_VERSION', '1.0.0');
 }
 
-if (!function_exists('Wilson_Web_development_setup')) :
+if (!function_exists('wilson_web_development_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -21,7 +21,7 @@ if (!function_exists('Wilson_Web_development_setup')) :
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 */
-	function Wilson_Web_development_setup()
+	function wilson_web_development_setup()
 	{
 		/*
 		 * Make theme available for translation.
@@ -77,7 +77,7 @@ if (!function_exists('Wilson_Web_development_setup')) :
 		add_theme_support(
 			'custom-background',
 			apply_filters(
-				'Wilson_Web_development_custom_background_args',
+				'wilson_web_development_custom_background_args',
 				array(
 					'default-color' => 'ffffff',
 					'default-image' => '',
@@ -104,7 +104,7 @@ if (!function_exists('Wilson_Web_development_setup')) :
 		);
 	}
 endif;
-add_action('after_setup_theme', 'Wilson_Web_development_setup');
+add_action('after_setup_theme', 'wilson_web_development_setup');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -113,18 +113,18 @@ add_action('after_setup_theme', 'Wilson_Web_development_setup');
  *
  * @global int $content_width
  */
-function Wilson_Web_development_content_width()
+function wilson_web_development_content_width()
 {
-	$GLOBALS['content_width'] = apply_filters('Wilson_Web_development_content_width', 640);
+	$GLOBALS['content_width'] = apply_filters('wilson_web_development_content_width', 640);
 }
-add_action('after_setup_theme', 'Wilson_Web_development_content_width', 0);
+add_action('after_setup_theme', 'wilson_web_development_content_width', 0);
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function Wilson_Web_development_widgets_init()
+function wilson_web_development_widgets_init()
 {
 	register_sidebar(
 		array(
@@ -138,12 +138,12 @@ function Wilson_Web_development_widgets_init()
 		)
 	);
 }
-add_action('widgets_init', 'Wilson_Web_development_widgets_init');
+add_action('widgets_init', 'wilson_web_development_widgets_init');
 
 /**
  * Enqueue scripts and styles.
  */
-function Wilson_Web_development_scripts()
+function wilson_web_development_scripts()
 {
 	wp_enqueue_style('wilson-web-development-style', get_stylesheet_uri(), array(), _S_VERSION);
 	wp_style_add_data('wilson-web-development-style', 'rtl', 'replace');
@@ -156,7 +156,7 @@ function Wilson_Web_development_scripts()
 		wp_enqueue_script('comment-reply');
 	}
 }
-add_action('wp_enqueue_scripts', 'Wilson_Web_development_scripts');
+add_action('wp_enqueue_scripts', 'wilson_web_development_scripts');
 
 /**
  * Implement the Custom Header feature.
@@ -185,7 +185,7 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-get_template_part('shortcodes');
+get_template_part('template-parts/shortcodes');
 
 // Add ACF Options Page
 
@@ -218,44 +218,6 @@ if (function_exists('acf_add_options_page')) {
 	));
 }
 
-// Add Events Post Type
-function add_events_post_type()
-{
-	$args = array(
-		'labels' => array(
-			'name' => 'Events',
-			'singular_name' => 'Event'
-		),
-		'hierarchical' => true,
-		'public' => true,
-		'has_archive' => true,
-		'menu_icon' => 'dashicons-calendar-alt',
-		'show_in_menu' => true,
-		'supports' => array('title'),
-		'show_in_admin_bar' => true
-	);
-	register_post_type('events', $args);
-}
 
-add_action('init', 'add_events_post_type');
-
-
-// Adds Events Taxonomies
-function add_events_taxonomy()
-{
-
-	$args = array(
-		'labels' => array(
-			'name' => 'Game',
-			'singular_name' => 'Game'
-		),
-		'public' => true,
-		'hierarchical' => true
-	);
-
-	register_taxonomy('game', array('events'), $args);
-}
-
-add_action('init', 'add_events_taxonomy');
 
 remove_filter('the_content', 'wpautop');

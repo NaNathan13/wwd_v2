@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 ?>
@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'Wilson_Web_development'); ?></a>
+		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'wilson_web_development'); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="header_wrapper">

@@ -29,12 +29,12 @@
   text-transform: uppercase;
   font-size: 36px;
   margin: 0;
-  border-bottom: 2px solid $yellow;
+  border-bottom: 2px solid $grey;
   text-align: center;
 }
 
 .all_teams_individual:hover {
-  background-color: $lightGray;
+  background-color: $grey;
 }
 
 .all_teams_individual a h3:hover {

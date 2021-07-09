@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 /**
@@ -14,13 +14,13 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function Wilson_Web_development_jetpack_setup() {
+function wilson_web_development_jetpack_setup() {
 	// Add theme support for Infinite Scroll.
 	add_theme_support(
 		'infinite-scroll',
 		array(
 			'container' => 'main',
-			'render'    => 'Wilson_Web_development_infinite_scroll_render',
+			'render'    => 'wilson_web_development_infinite_scroll_render',
 			'footer'    => 'page',
 		)
 	);
@@ -48,12 +48,12 @@ function Wilson_Web_development_jetpack_setup() {
 		)
 	);
 }
-add_action( 'after_setup_theme', 'Wilson_Web_development_jetpack_setup' );
+add_action( 'after_setup_theme', 'wilson_web_development_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function Wilson_Web_development_infinite_scroll_render() {
+function wilson_web_development_infinite_scroll_render() {
 	while ( have_posts() ) {
 		the_post();
 		if ( is_search() ) :
