@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 ?>
@@ -23,14 +23,14 @@
 		?>
 			<div class="entry-meta">
 				<?php
-				Wilson_Web_development_posted_on();
-				Wilson_Web_development_posted_by();
+				wilson_web_development_posted_on();
+				wilson_web_development_posted_by();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
-	<?php Wilson_Web_development_post_thumbnail(); ?>
+	<?php wilson_web_development_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
@@ -38,7 +38,7 @@
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'Wilson_Web_development'),
+					__('Continue reading<span class="screen-reader-text"> "%s"</span>', 'wilson_web_development'),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -51,7 +51,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__('Pages:', 'Wilson_Web_development'),
+				'before' => '<div class="page-links">' . esc_html__('Pages:', 'wilson_web_development'),
 				'after'  => '</div>',
 			)
 		);

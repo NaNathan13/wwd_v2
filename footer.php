@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 ?>

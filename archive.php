@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 get_header();

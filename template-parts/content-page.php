@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 ?>
@@ -21,7 +21,7 @@
 
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'Wilson_Web_development' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wilson_web_development' ),
 				'after'  => '</div>',
 			)
 		);
@@ -35,7 +35,7 @@
 				sprintf(
 					wp_kses(
 						/* translators: %s: Name of current post. Only visible to screen readers */
-						__( 'Edit <span class="screen-reader-text">%s</span>', 'Wilson_Web_development' ),
+						__( 'Edit <span class="screen-reader-text">%s</span>', 'wilson_web_development' ),
 						array(
 							'span' => array(
 								'class' => array(),

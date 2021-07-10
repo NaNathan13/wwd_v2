@@ -8,39 +8,39 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package Wilson_Web_development
+ * @package wilson_web_development
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses Wilson_Web_development_header_style()
+ * @uses wilson_web_development_header_style()
  */
-function Wilson_Web_development_custom_header_setup() {
+function wilson_web_development_custom_header_setup() {
 	add_theme_support(
 		'custom-header',
 		apply_filters(
-			'Wilson_Web_development_custom_header_args',
+			'wilson_web_development_custom_header_args',
 			array(
 				'default-image'      => '',
 				'default-text-color' => '000000',
 				'width'              => 1000,
 				'height'             => 250,
 				'flex-height'        => true,
-				'wp-head-callback'   => 'Wilson_Web_development_header_style',
+				'wp-head-callback'   => 'wilson_web_development_header_style',
 			)
 		)
 	);
 }
-add_action( 'after_setup_theme', 'Wilson_Web_development_custom_header_setup' );
+add_action( 'after_setup_theme', 'wilson_web_development_custom_header_setup' );
 
-if ( ! function_exists( 'Wilson_Web_development_header_style' ) ) :
+if ( ! function_exists( 'wilson_web_development_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
 	 *
-	 * @see Wilson_Web_development_custom_header_setup().
+	 * @see wilson_web_development_custom_header_setup().
 	 */
-	function Wilson_Web_development_header_style() {
+	function wilson_web_development_header_style() {
 		$header_text_color = get_header_textcolor();
 
 		/*

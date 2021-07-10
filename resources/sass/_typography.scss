@@ -16,14 +16,10 @@ html {
 /* Typography
 --------------------------------------------- */
 // Variables
-$red: #f91d27;
-$yellow: #eec22e;
+$red: #880808;
+$grey: #989898;
 $black: #000006;
-$lightGray: #202932;
-$darkGray: #0f161e;
-
-$discord: #738adb;
-$twitch: #6441a5;
+$white: #fff;
 
 $borderRadius: 15px;
 
@@ -34,8 +30,8 @@ select,
 optgroup,
 textarea {
   color: #404040;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -284,6 +280,6 @@ textarea {
 }
 
 #primary {
-  background-color: $darkGray;
+  background-color: $grey;
   min-height: 60vh;
 }

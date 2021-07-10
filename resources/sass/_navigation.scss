@@ -44,7 +44,7 @@
     width: 60px;
     height: 60px;
     text-align: center;
-    background-color: $yellow;
+    background-color: $grey;
     outline: none;
     z-index: 99;
   }
@@ -102,7 +102,7 @@
 
   nav#site-navigation .showNav {
     position: fixed;
-    background-color: $darkGray;
+    background-color: $grey;
     color: red;
     top: 0;
     height: 75%;
@@ -139,7 +139,7 @@
 }
 
 header {
-  background-color: $darkGray;
+  background-color: $grey;
 }
 
 @media (min-width: 768px) {
