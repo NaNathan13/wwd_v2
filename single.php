@@ -18,15 +18,18 @@ get_header();
 		if (have_rows('page_content')) :
 
 			// loop through the rows of data
-			while (have_rows('flexible_content_field_name')) : the_row();
+			while (have_rows('page_content')) : the_row();
 				if (get_row_layout() == 'fifty_fifty_hero') :
-					get_template_part('components/blocks/fifty_fifty_hero');
+		?>
+					<h2>fifty fifty hero is present</h2>
+			<?php
+					get_template_part('template-parts/components/blocks/fifty_fifty_hero');
 				elseif (get_row_layout() == 'dnamic_columns') :
-					get_template_part('components/blocks/dnamic_columns');
+					get_template_part('template-parts/components/blocks/dnamic_columns');
 				endif;
 			endwhile;
 		else :
-		?>
+			?>
 			<h2>No Layouts found</h2>
 		<?php
 
