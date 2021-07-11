@@ -20,13 +20,24 @@
     </section>
 <?php endif; ?>
 
+<?php 
+
+$autoplay = get_sub_field('autoplay');
+$dots = get_sub_field('dots');
+
+?>
 
 <script>
     jQuery(document).ready(function($) {
         $('.testimonai_carousel_wrapper').slick({
+            dots: <?php if ($dots) : echo "true";
+                    else : echo "false";
+                    endif; ?>,
             slidesToShow: 1,
             slidesToScroll: 1,
-            autoplay: true,
+            autoplay: <?php if ($autoplay) : echo "true";
+                        else : echo "false";
+                        endif; ?>,
             autoplaySpeed: 5000,
         });
     });

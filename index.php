@@ -20,9 +20,9 @@ get_header();
 
 	<div class="page_grid page_wrapper">
 		<section class="page_content">
-			<section class="hero_fifty_fifty_section">
-				<div class="hero_fifty_fifty_container">
-					<div class="hero_fifty_fifty_headline full_width">
+			<section class="hero-fifty_fifty_section">
+				<div class="hero-fifty_fifty_container">
+					<div class="hero-fifty_fifty_headline full_width">
 						<h1>NEWS</h1>
 					</div>
 				</div>

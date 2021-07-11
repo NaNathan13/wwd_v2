@@ -1,15 +1,6 @@
-<!-- 
-To add later:
-
- - control of alignment of text
-
-
-
- -->
-
-<section class="hero_parallax_section">
-    <div class="hero_parallax_container" style="background-image: url(<?php echo get_sub_field("image")['url'] ?>)">
-        <?php if (get_field('page_headline')) : ?>
+<section class="hero-parallax_section">
+    <div class="hero-parallax_container parallax" style="background-image: url(<?php echo get_sub_field("image")['url'] ?>)">
+        <?php if (get_sub_field('page_headline')) : ?>
             <h1><?php echo get_sub_field('page_headline') ?></h1>
         <?php endif; ?>
 

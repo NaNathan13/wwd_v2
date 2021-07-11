@@ -17,21 +17,9 @@ get_header();
 ?>
 
 <main id="primary" class="site-main front_page_main">
-	<div class="page_wrapper">
-		<div class="page_hero_container">
-			<?php get_template_part('template-parts/heros/home_hero');  ?>
-		</div>
-
-		<div class="page_content_container">
-			home page
-		</div>
-
-	</div>
-
-
-
-
+	<?php get_template_part('template-parts/acf_block_declaration'); ?>
 </main>
 
+<p></p>
 <?php
 get_footer();

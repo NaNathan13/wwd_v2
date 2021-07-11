@@ -3,12 +3,14 @@
         .gallery_carousel_images_wrapper {
             margin: 0 50px;
             img {
-                border: 2px solid blue;
                 width: 100%;
-
             }
-            .slick-slide{
-                margin: 0 15px;
+            .slick-track {
+                display: flex;
+                align-items: center;
+                .slick-slide {
+                    margin: 0 10px;
+                }
             }
         }
     }

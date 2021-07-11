@@ -1,14 +1,5 @@
-<!-- 
-To add later:
-
- - control of alignment of text
-
-
-
- -->
-
-<section class="hero_static_section">
-    <div class="hero_static_container">
+<section class="hero-static_section">
+    <div class="hero-static_container">
         <?php if (get_field('page_headline')) : ?>
             <h1><?php echo get_sub_field('page_headline') ?></h1>
         <?php endif; ?>

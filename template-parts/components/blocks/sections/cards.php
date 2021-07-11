@@ -1,10 +1,3 @@
-<!-- 
-
-To add:
-
- - Field to control width on desktop
- -->
-
 <?php if (get_sub_field('cards')) : ?>
     <section class="cards_section">
         <div class="cards_container">
@@ -41,7 +34,6 @@ To add:
                             <div class="card_cta_wrapper">
                                 <a class="card_cta" href="<?php echo esc_url(get_sub_field('link')['url']) ?>"><?php echo esc_html(get_sub_field('link')['title']) ?></a>
                             </div>
-
                         <?php endif; ?>
                     </div>
                 <?php endwhile; ?>

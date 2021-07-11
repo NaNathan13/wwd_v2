@@ -18,6 +18,7 @@
 $numberOfSlidesDesktop = get_sub_field('number_of_slides_desktop');
 $numberOfSlidesMobile = get_sub_field('number_of_slides_mobile');
 $autoplay = get_sub_field('autoplay');
+$dots = get_sub_field('dots');
 
 ?>
 
@@ -25,7 +26,9 @@ $autoplay = get_sub_field('autoplay');
     jQuery(document).ready(function($) {
         $('.gallery_carousel_images_wrapper').slick({
             lazyLoad: 'ondemand',
-            dots: true,
+            dots: <?php if ($dots) : echo "true";
+                    else : echo "false";
+                    endif; ?>,
             infinite: true,
             speed: 600,
             slidesToShow: <?php echo $numberOfSlidesDesktop; ?>,

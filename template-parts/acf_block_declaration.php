@@ -2,26 +2,34 @@
 if (have_rows('page_content')) :
     while (have_rows('page_content')) : the_row();
         // Content
-        if (get_row_layout() == 'wysiwyg') :
+        if (get_row_layout() == 'content-image') :
 
-            get_template_part('template-parts/components/blocks/content/wysiwyg');
+            get_template_part('template-parts/components/blocks/content/content-image');
 
-        elseif (get_row_layout() == 'text') :
+        elseif (get_row_layout() == 'content-spacer') :
 
-            get_template_part('template-parts/components/blocks/content/text');
+            get_template_part('template-parts/components/blocks/content/content-spacer');
+
+        elseif (get_row_layout() == 'content-text') :
+
+            get_template_part('template-parts/components/blocks/content/content-text');
+
+        elseif (get_row_layout() == 'content-wysiwyg') :
+
+            get_template_part('template-parts/components/blocks/content/content-wysiwyg');
 
         // Heros
-        elseif (get_row_layout() == 'hero_fifty_fifty') :
+        elseif (get_row_layout() == 'hero-fifty_fifty') :
 
-            get_template_part('template-parts/components/blocks/heros/hero_fifty_fifty');
+            get_template_part('template-parts/components/blocks/heros/hero-fifty_fifty');
 
-        elseif (get_row_layout() == 'hero_parallax') :
+        elseif (get_row_layout() == 'hero-parallax') :
 
-            get_template_part('template-parts/components/blocks//heros/hero_parallax');
+            get_template_part('template-parts/components/blocks/heros/hero-parallax');
 
-        elseif (get_row_layout() == 'hero_static') :
+        elseif (get_row_layout() == 'hero-static') :
 
-            get_template_part('template-parts/components/blocks/sections/hero_static');
+            get_template_part('template-parts/components/blocks/heros/hero-static');
 
         // Sections
         elseif (get_row_layout() == 'accordion') :
