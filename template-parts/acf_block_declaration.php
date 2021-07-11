@@ -48,9 +48,9 @@ if (have_rows('page_content')) :
 
             get_template_part('template-parts/components/blocks/sections/columns');
 
-        elseif (get_row_layout() == 'gallery') :
+        elseif (get_row_layout() == 'gallery_carousel') :
 
-            get_template_part('template-parts/components/blocks/sections/gallery');
+            get_template_part('template-parts/components/blocks/sections/gallery_carousel');
 
         elseif (get_row_layout() == 'testimonial_carousel') :
 

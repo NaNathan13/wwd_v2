@@ -1,0 +1,15 @@
+.gallery_carousel_section {
+    .gallery_carousel_container {
+        .gallery_carousel_images_wrapper {
+            margin: 0 50px;
+            img {
+                border: 2px solid blue;
+                width: 100%;
+
+            }
+            .slick-slide{
+                margin: 0 15px;
+            }
+        }
+    }
+}
