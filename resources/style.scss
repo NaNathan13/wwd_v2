@@ -22,8 +22,6 @@ This is the starter theme for Wilson Web Development Starter Theme
 @import "sass/footer";
 @import "sass/library";
 @import "sass/reusable";
-@import "sass/slick";
-@import "sass/slick_theme";
 
 @import "sass/template_specific/team";
 @import "sass/template_specific/contact";
@@ -53,7 +51,6 @@ This is the starter theme for Wilson Web Development Starter Theme
 
 // Partials
 @import "sass/partials/section_headlines";
-
 
 @media (max-width: 768px) {
   .hide_on_mobile {

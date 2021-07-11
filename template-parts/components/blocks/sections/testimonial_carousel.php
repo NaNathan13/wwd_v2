@@ -23,7 +23,11 @@
 
 <script>
     jQuery(document).ready(function($) {
-        $('.testimonai_carousel_wrapper').slick();
-
+        $('.testimonai_carousel_wrapper').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 5000,
+        });
     });
 </script>
