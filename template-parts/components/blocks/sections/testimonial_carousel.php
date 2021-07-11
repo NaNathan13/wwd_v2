@@ -1,13 +1,8 @@
 <?php if (get_sub_field('testimonials')) : ?>
     <section class="testimonial_carousel_section">
         <div class="testimonial_carousel_container">
-            <?php if (get_sub_field('section_headline')) : ?>
-                <h2><?php echo get_sub_field('section_headline') ?></h2>
-            <?php endif; ?>
+            <?php get_template_part('template-parts/section_headlines'); ?>
 
-            <?php if (get_sub_field('section_subheadline')) : ?>
-                <p><?php echo get_sub_field('section_subheadline') ?></p>
-            <?php endif; ?>
             <div class="testimonai_carousel_wrapper">
                 <?php while (has_sub_field('testimonials')) : ?>
                     <div class="testimonial_slide slide">

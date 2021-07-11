@@ -1,12 +1,9 @@
 <section class="contact_form_section">
     <div class="contact_form_container">
-        <?php if (get_sub_field('section_headline')) : ?>
-            <h2><?php echo get_sub_field('section_headline') ?></h2>
-        <?php endif; ?>
+        <?php get_template_part('template-parts/section_headlines'); ?>
 
-        <?php if (get_sub_field('section_subheadline')) : ?>
-            <p><?php echo get_sub_field('section_subheadline') ?></p>
-        <?php endif; ?>
-
+        <div class="contact_form_wrapper">
+            <h3>Contact Form Goes Here!</h3>
+        </div>
     </div>
 </section>

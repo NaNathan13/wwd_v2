@@ -24,6 +24,10 @@ if (have_rows('page_content')) :
             get_template_part('template-parts/components/blocks/sections/hero_static');
 
         // Sections
+        elseif (get_row_layout() == 'accordion') :
+
+            get_template_part('template-parts/components/blocks/sections/accordion');
+
         elseif (get_row_layout() == 'content_with_image') :
 
             get_template_part('template-parts/components/blocks/sections/content_with_image');
@@ -48,11 +52,6 @@ if (have_rows('page_content')) :
 
             get_template_part('template-parts/components/blocks/sections/gallery');
 
-        elseif (get_row_layout() == 'gallery') :
-
-            get_template_part('template-parts/components/blocks/sections/accordion');
-
         endif;
     endwhile;
 endif;
-?>

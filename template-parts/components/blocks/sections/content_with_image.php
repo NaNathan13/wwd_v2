@@ -9,13 +9,8 @@ Things to add:
 
 <section class="content_with_image_section">
     <div class="content_with_image_container">
-        <?php if (get_sub_field('section_headline')) : ?>
-            <h2><?php echo get_sub_field('section_headline') ?></h2>
-        <?php endif; ?>
+        <?php get_template_part('template-parts/section_headlines'); ?>
 
-        <?php if (get_sub_field('section_subheadline')) : ?>
-            <p><?php echo get_sub_field('section_subheadline') ?></p>
-        <?php endif; ?>
         <?php if (get_sub_field('image_side') == 'left') : ?>
             <div class="content_with_image_image">
                 <img src="<?php echo get_sub_field('image')['url'] ?>" alt="">

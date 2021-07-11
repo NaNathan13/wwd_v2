@@ -8,14 +8,7 @@ To add:
 <?php if (get_sub_field('cards')) : ?>
     <section class="cards_section">
         <div class="cards_container">
-            <h2>cards block</h2>
-            <?php if (get_sub_field('section_headline')) : ?>
-                <h2><?php echo get_sub_field('section_headline') ?></h2>
-            <?php endif; ?>
-
-            <?php if (get_sub_field('section_subheadline')) : ?>
-                <p><?php echo get_sub_field('section_subheadline') ?></p>
-            <?php endif; ?>
+            <?php get_template_part('template-parts/section_headlines'); ?>
 
             <?php while (has_sub_field('cards')) : ?>
                 <div class="cards_card">

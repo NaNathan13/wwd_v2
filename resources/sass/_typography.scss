@@ -45,11 +45,10 @@ h6 {
   clear: both;
   color: #fff;
   text-transform: uppercase;
-  margin: 0 0 15px;
+  margin: 0;
 }
 
 h1 {
-  margin: 0;
   font-size: 32px;
 }
 
@@ -61,7 +60,7 @@ h1 {
 }
 
 p {
-  margin: 0 0 15px 0;
+  margin: 0;
   color: #fff;
   font-size: 18px;
 }
@@ -71,14 +70,6 @@ cite,
 em,
 i {
   font-style: italic;
-}
-
-blockquote {
-  margin: 0 1.5em;
-}
-
-address {
-  margin: 0 0 1.5em;
 }
 
 pre {
@@ -125,12 +116,6 @@ hr {
   background-color: #ccc;
   border: 0;
   height: 1px;
-  margin-bottom: 1.5em;
-}
-
-ul,
-ol {
-  margin: 0 0 1.5em 3em;
 }
 
 ul {
@@ -141,18 +126,9 @@ ol {
   list-style: decimal;
 }
 
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: 1.5em;
-}
 
 dt {
   font-weight: 700;
-}
-
-dd {
-  margin: 0 1.5em 1.5em;
 }
 
 /* Make sure embeds and iframes fit their containers. */
@@ -172,7 +148,7 @@ figure {
 }
 
 table {
-  margin: 0 0 1.5em;
+  margin: 0;
   width: 100%;
 }
 

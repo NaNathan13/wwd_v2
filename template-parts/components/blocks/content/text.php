@@ -1,3 +1,1 @@
-
-<?php
-echo get_sub_field('content');
+<p class="text_bottom_spacing"><?php echo get_sub_field('content'); ?></p>
