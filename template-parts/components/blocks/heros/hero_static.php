@@ -7,8 +7,8 @@ To add later:
 
  -->
 
-<section class="hero_parallax_section">
-    <div class="hero_parallax_container" style="background-image: url(<?php echo get_sub_field("image")['url'] ?>)">
+<section class="hero_static_section">
+    <div class="hero_static_container">
         <?php if (get_field('page_headline')) : ?>
             <h1><?php echo get_sub_field('page_headline') ?></h1>
         <?php endif; ?>
@@ -17,8 +17,6 @@ To add later:
             <p><?php echo get_sub_field('page_subheadline') ?></p>
         <?php endif; ?>
 
-        <?php if (get_sub_field('link')) : ?>
-            <a href="<?php echo esc_url(get_sub_field('link')['url']) ?>"><?php echo esc_html(get_sub_field('link')['title']) ?></a>
-        <?php endif; ?>
+        <img src="<?php echo get_sub_field("image")['url'] ?>" alt="">
     </div>
 </section>

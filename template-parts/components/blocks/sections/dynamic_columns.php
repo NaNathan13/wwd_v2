@@ -1,6 +1,13 @@
 <?php if (get_sub_field('columns')) : ?>
     <section class="dynamic_columns_section">
         <div class="dynamic_columns_container">
+            <?php if (get_sub_field('section_headline')) : ?>
+                <h2><?php echo get_sub_field('section_headline') ?></h2>
+            <?php endif; ?>
+
+            <?php if (get_sub_field('section_subheadline')) : ?>
+                <p><?php echo get_sub_field('section_subheadline') ?></p>
+            <?php endif; ?>
             <?php while (has_sub_field('columns')) : ?>
                 <div class="dynamic_columns_column">
                     <?php if (get_sub_field('icon')) : ?>

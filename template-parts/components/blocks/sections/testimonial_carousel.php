@@ -1,12 +1,30 @@
-<section class="testimonial_carousel_section">
-    <div class="testimonial_carousel_container">
-        <h2><?php echo get_sub_field('headline'); ?></h2>
-        <div class="testimonai_carousel_wrapper">
-            <p><?php echo get_sub_field('testimonial') ?></p>
-            <p><?php echo get_sub_field('testimonial_name') ?></p>
+<?php if (get_sub_field('testimonials')) : ?>
+    <section class="testimonial_carousel_section">
+        <div class="testimonial_carousel_container">
+            <?php if (get_sub_field('section_headline')) : ?>
+                <h2><?php echo get_sub_field('section_headline') ?></h2>
+            <?php endif; ?>
+
+            <?php if (get_sub_field('section_subheadline')) : ?>
+                <p><?php echo get_sub_field('section_subheadline') ?></p>
+            <?php endif; ?>
+            <div class="testimonai_carousel_wrapper">
+                <?php while (has_sub_field('testimonials')) : ?>
+                    <div class="testimonial_slide slide">
+                        <?php if (get_sub_field('testimonial')) : ?>
+                            <p><?php echo get_sub_field('testimonial') ?></p>
+                        <?php endif; ?>
+
+                        <?php if (get_sub_field('name')) : ?>
+                            <p><?php echo get_sub_field('name') ?></p>
+                        <?php endif; ?>
+                    </div>
+                <?php endwhile; ?>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+<?php endif; ?>
+
 
 <script>
     window.onload = function() {
@@ -77,5 +95,7 @@
             }, 7000);
         }
         repeater();
+
+        console.log("all of carousel js ran")
     });
 </script>

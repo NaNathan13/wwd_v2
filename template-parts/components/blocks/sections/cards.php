@@ -8,10 +8,16 @@ To add:
 <?php if (get_sub_field('cards')) : ?>
     <section class="cards_section">
         <div class="cards_container">
-            <h2><?php echo get_sub_field('section_headline') ?></h2>
-            <p><?php echo get_sub_field('subheadline') ?></p>
-            
-            <?php while (has_sub_field('columns')) : ?>
+            <h2>cards block</h2>
+            <?php if (get_sub_field('section_headline')) : ?>
+                <h2><?php echo get_sub_field('section_headline') ?></h2>
+            <?php endif; ?>
+
+            <?php if (get_sub_field('section_subheadline')) : ?>
+                <p><?php echo get_sub_field('section_subheadline') ?></p>
+            <?php endif; ?>
+
+            <?php while (has_sub_field('cards')) : ?>
                 <div class="cards_card">
                     <?php if (get_sub_field('icon')) : ?>
                         <img src="<?php echo get_sub_field('icon')['url'] ?>" alt="">

@@ -29,9 +29,24 @@ This is the starter theme for Wilson Web Development Starter Theme
 @import "sass/template_specific/branding";
 @import "sass/template_specific/staff";
 
+// Blocks
+// Cotnent
+@import "sass/blocks/content/text";
+@import "sass/blocks/content/wysiwyg";
 
-@import "sass/components/blocks/hero_fifty_fifty";
-@import "sass/components/blocks/dynamic_columns";
+// Heros
+@import "sass/blocks/heros/hero_fifty_fifty";
+@import "sass/blocks/heros/hero_parallax";
+@import "sass/blocks/heros/hero_static";
+
+// Sections
+@import "sass/blocks/sections/accordion";
+@import "sass/blocks/sections/cards";
+@import "sass/blocks/sections/contact_form";
+@import "sass/blocks/sections/content_with_image";
+@import "sass/blocks/sections/dynamic_columns";
+@import "sass/blocks/sections/gallery";
+@import "sass/blocks/sections/testimonial_carousel";
 
 @media (max-width: 768px) {
   .hide_on_mobile {
