@@ -21,7 +21,7 @@
         "sass/components/_latest_videos.scss",
         "sass/components/_player_cards.scss",
         "sass/components/_upcoming_events.scss",
-        "sass/heros/_fifty_fifty_hero.scss"
+        "sass/heros/_hero_fifty_fifty.scss"
     ],
     "names": [],
     "file": "style.css"

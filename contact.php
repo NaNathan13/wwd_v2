@@ -11,7 +11,7 @@ get_header();
 
 <main id="primary" class="site-main contact_main">
 
-	<?php get_template_part('template-parts/heros/fifty_fifty_hero'); ?>
+	<?php get_template_part('template-parts/heros/hero_fifty_fifty'); ?>
 
 
 

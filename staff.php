@@ -12,7 +12,7 @@ get_header();
 <main id="primary" class="site-main staff_main">
 
 	<div class="page_wrapper">
-		<?php get_template_part('template-parts/heros/fifty_fifty_hero'); ?>
+		<?php get_template_part('template-parts/heros/hero_fifty_fifty'); ?>
 
 		<section class="staff_section">
 			<div class="staff_container">

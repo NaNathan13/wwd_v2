@@ -185,6 +185,12 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+
+// Removes All Comments Functionality
+get_template_part('inc/remove-comments');
+
+
+// Adds shortcode declarations
 get_template_part('template-parts/shortcodes');
 
 // Add ACF Options Page

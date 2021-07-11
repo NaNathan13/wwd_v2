@@ -1,9 +1,9 @@
-.fifty_fifty_hero_section {
-  .fifty_fifty_hero_container {
+.hero_fifty_fifty_section {
+  .hero_fifty_fifty_container {
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
-    .fifty_fifty_hero_headline {
+    .hero_fifty_fifty_headline {
       background-color: $grey;
       display: flex;
       justify-content: center;
@@ -16,7 +16,7 @@
       }
     }
 
-    .fifty_fifty_hero_image {
+    .hero_fifty_fifty_image {
       width: 100%;
       img {
         object-fit: cover;
@@ -26,13 +26,13 @@
 }
 
 @media (min-width: 768px) {
-  .fifty_fifty_hero_section {
-    .fifty_fifty_hero_container {
+  .hero_fifty_fifty_section {
+    .hero_fifty_fifty_container {
       flex-direction: row;
-      .fifty_fifty_hero_headline {
+      .hero_fifty_fifty_headline {
         width: 50%;
       }
-      .fifty_fifty_hero_image {
+      .hero_fifty_fifty_image {
         width: 50%;
       }
     }
