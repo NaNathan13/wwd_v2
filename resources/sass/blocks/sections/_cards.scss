@@ -1,0 +1,48 @@
+.cards_section {
+    .cards_container {
+        display: flex;
+        flex-direction: column;
+        .cards_wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .cards_card {
+                // Width of card controlled via ACF
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0 5px 15px 5px;
+                border: 2px solid $red;
+                padding: 10px;
+
+                img.card_icon {
+                    max-width: 50px;
+                    margin: 0 auto 10px auto;
+                }
+                .card_headline {
+                    margin-bottom: 10px;
+                }
+                .card_subheadline {
+                    font-size: 1.8rem;
+                    margin-bottom: 10px;
+                }
+                .card_paragraph {
+                    margin-bottom: 10px;
+                }
+                .card_cta_wrapper {
+                    padding: 10px 15px;
+                    a.card_cta {
+                        padding: 10px 15px;
+                        background-color: $red;
+                        border-radius: 5px;
+                        &:hover {
+                            background-color: $black;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

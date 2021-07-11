@@ -22,6 +22,8 @@ This is the starter theme for Wilson Web Development Starter Theme
 @import "sass/footer";
 @import "sass/library";
 @import "sass/reusable";
+@import "sass/slick";
+@import "sass/slick_theme";
 
 @import "sass/template_specific/team";
 @import "sass/template_specific/contact";
@@ -31,7 +33,7 @@ This is the starter theme for Wilson Web Development Starter Theme
 @import "sass/template_specific/staff";
 
 // Blocks
-// Cotnent
+// Content
 @import "sass/blocks/content/text";
 @import "sass/blocks/content/wysiwyg";
 
@@ -45,9 +47,13 @@ This is the starter theme for Wilson Web Development Starter Theme
 @import "sass/blocks/sections/cards";
 @import "sass/blocks/sections/contact_form";
 @import "sass/blocks/sections/content_with_image";
-@import "sass/blocks/sections/dynamic_columns";
+@import "sass/blocks/sections/columns";
 @import "sass/blocks/sections/gallery";
 @import "sass/blocks/sections/testimonial_carousel";
+
+// Partials
+@import "sass/partials/section_headlines";
+
 
 @media (max-width: 768px) {
   .hide_on_mobile {

@@ -3,5 +3,5 @@
 <?php endif; ?>
 
 <?php if (get_sub_field('section_subheadline')) : ?>
-    <p class="section_subheadline align-<?php echo get_sub_field('headline_alignment') ?>"><?php echo get_sub_field('section_subheadline') ?></p>
+    <h5 class="section_subheadline align-<?php echo get_sub_field('headline_alignment') ?>"><?php echo get_sub_field('section_subheadline') ?></h5>
 <?php endif; ?>

@@ -8,6 +8,7 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -44,25 +45,63 @@ h5,
 h6 {
   clear: both;
   color: #fff;
-  text-transform: uppercase;
   margin: 0;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 3rem;
 }
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: 52px;
-    text-transform: uppercase;
-  }
+h2 {
+  font-size: 2.75rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2.25rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
 }
 
 p {
   margin: 0;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2.75rem;
+  }
+
+  h4 {
+    font-size: 2.5rem;
+  }
+
+  h5 {
+    font-size: 2.25rem;
+  }
+
+  h6 {
+    font-size: 2rem;
+  }
 }
 
 dfn,
@@ -126,7 +165,6 @@ ol {
   list-style: decimal;
 }
 
-
 dt {
   font-weight: 700;
 }
@@ -155,13 +193,16 @@ table {
 /* Links
 --------------------------------------------- */
 a {
+  margin: 0;
   color: #fff;
+  font-size: 1.5rem;
 }
 
 a:hover,
 a:focus,
 a:active {
   color: $red;
+  transition: all 0.5s ease;
 }
 
 a:focus {
@@ -180,9 +221,9 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
+  border-color: $red;
+  border-radius: 5px;
+  background: #fff;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
@@ -192,7 +233,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa;
+  border-color: #000;
 }
 
 button:active,

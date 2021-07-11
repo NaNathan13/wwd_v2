@@ -226,4 +226,12 @@ if (function_exists('acf_add_options_page')) {
 
 
 
-remove_filter('the_content', 'wpautop');
+function disable_wp_auto_p($content)
+{
+	if (is_singular('page')) {
+		remove_filter('the_content', 'wpautop');
+		remove_filter('the_excerpt', 'wpautop');
+	}
+	return $content;
+}
+add_filter('the_content', 'disable_wp_auto_p', 0);

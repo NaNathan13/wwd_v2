@@ -28,29 +28,33 @@ if (have_rows('page_content')) :
 
             get_template_part('template-parts/components/blocks/sections/accordion');
 
-        elseif (get_row_layout() == 'content_with_image') :
-
-            get_template_part('template-parts/components/blocks/sections/content_with_image');
-
-        elseif (get_row_layout() == 'testimonial_carousel') :
-
-            get_template_part('template-parts/components/blocks/sections/testimonial_carousel');
-
         elseif (get_row_layout() == 'cards') :
 
             get_template_part('template-parts/components/blocks/sections/cards');
+
+        elseif (get_row_layout() == 'content_with_image') :
+
+            get_template_part('template-parts/components/blocks/sections/content_with_image');
 
         elseif (get_row_layout() == 'contact_form') :
 
             get_template_part('template-parts/components/blocks/sections/contact_form');
 
-        elseif (get_row_layout() == 'dynamic_columns') :
+        elseif (get_row_layout() == 'data_cards') :
 
-            get_template_part('template-parts/components/blocks/sections/dynamic_columns');
+            get_template_part('template-parts/components/blocks/sections/data_cards');
+
+        elseif (get_row_layout() == 'columns') :
+
+            get_template_part('template-parts/components/blocks/sections/columns');
 
         elseif (get_row_layout() == 'gallery') :
 
             get_template_part('template-parts/components/blocks/sections/gallery');
+
+        elseif (get_row_layout() == 'testimonial_carousel') :
+
+            get_template_part('template-parts/components/blocks/sections/testimonial_carousel');
 
         endif;
     endwhile;
