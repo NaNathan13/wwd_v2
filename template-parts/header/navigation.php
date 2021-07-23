@@ -10,4 +10,4 @@
         )
     );
     ?>
-</nav><!-- #site-navigation -->
+</nav>

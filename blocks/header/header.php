@@ -16,7 +16,6 @@
     <header class="main-header">
       <a class="skip-to-content" href="#content" onclick="document.querySelector('#content').focus()">skip to main content</a>
 
-      <?php block('notification', [ 'content' => get_field('site_notification', 'options') ]) ?>
 
       <div class="main-header--search wrapper flex justify-end">
         <?php block('search-form'); ?>
@@ -25,10 +24,10 @@
       <div class="main-header--wrapper wrapper">
 
         <a class="main-header--site-logo" href="<?php echo home_url(); ?>" title="<?php echo bloginfo('name'); ?> home">
-          <?php echo wp_image(get_field('site_logo', 'options'), 'medium', [ 'class' => 'site-logo']); ?>
+          <?= get_field('site_logo', 'option') ?>
         </a>
 
-        <?php block('main-menu') ?>
+        <?php block('navigation') ?>
 
         <button class="mobile-only mobile-menu-button"><span></span></button>        
       </div>

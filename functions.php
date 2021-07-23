@@ -9,6 +9,7 @@
  */
 
 require get_template_directory() . '/inc/base.php';
+require get_template_directory() . '/inc/build-blocks.php';
 
 if (!defined('_S_VERSION')) {
 	// Replace the version number of the theme on each release.
