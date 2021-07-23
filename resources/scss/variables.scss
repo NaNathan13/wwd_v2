@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+$wrapper-width: 1200px;
+$mobile-switch: 768px;
+
+//fonts
+$font-main: 'Montserrat', 'Helvetica', 'Sans Serif';
+
+//colors
+$black: #333;
+$blue: skyblue;
+$yellow: yellow;
+
+//global theme colors
+$primary-color   : $blue;
+$secondary-color: $yellow;
+
+$text-color: $black;

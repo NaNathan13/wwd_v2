@@ -1,84 +1,12 @@
-/*
-Theme Name: Wilson Web Development Starter Theme
-Theme URI: http://underscores.me/
-Author: Nathan J Wilson
-Author URI: https://nathanwilsondev.com
-Description: WWD Starter Theme
-Version: 1.0.0
-Tested up to: 5.4
-Requires PHP: 5.6
-License: GNU General Public License v2 or later
-License URI: LICENSE
-Text Domain: wilson-web-development
-
-This is the starter theme for Wilson Web Development Starter Theme
-*/
-
-@import "sass/typography";
-@import "sass/navigation";
-@import "sass/layout";
-@import "sass/front_page";
-@import "sass/accessibility";
-@import "sass/footer";
-@import "sass/library";
-@import "sass/reusable";
-@import "sass/flexboxgrid";
-
-@import "sass/template_specific/team";
-@import "sass/template_specific/contact";
-@import "sass/template_specific/news";
-@import "sass/template_specific/events";
-@import "sass/template_specific/branding";
-@import "sass/template_specific/staff";
+@import 'scss/variables';
+@import 'scss/mixins';
+@import 'scss/reset';
+@import 'scss/animations';
+@import 'scss/base';
+@import 'scss/editor';
+@import 'scss/grids';
+@import 'scss/helper-classes';
+@import 'scss/slick';
 
 // Blocks
-// Content
-@import "sass/blocks/content/text";
-@import "sass/blocks/content/wysiwyg";
-
-// Heros
-@import "sass/blocks/heros/hero_fifty_fifty";
-@import "sass/blocks/heros/hero_parallax";
-@import "sass/blocks/heros/hero_static";
-
-// Sections
-@import "sass/blocks/sections/accordion";
-@import "sass/blocks/sections/cards";
-@import "sass/blocks/sections/contact_form";
-@import "sass/blocks/sections/content_with_image";
-@import "sass/blocks/sections/columns";
-@import "sass/blocks/sections/gallery_carousel";
-@import "sass/blocks/sections/testimonial_carousel";
-
-// Partials
-@import "sass/partials/section_headlines";
-
-@media (max-width: 768px) {
-  .hide_on_mobile {
-    display: none !important;
-  }
-}
-
-@media (min-width: 769px) {
-  .hide_on_tablet_and_desktop {
-    display: none !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  .hide_on_mobile_and_tablet {
-    display: none !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hide_on_desktop {
-    display: none !important;
-  }
-}
-
-//Templates
-
-//Components
-
-//Shortcodes
+@import '../blocks/accordion/accordion';

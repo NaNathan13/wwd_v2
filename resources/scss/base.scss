@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-family: $font-main;
+  color: $text-color;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  & > footer {
+    margin-top: auto;
+  }
+}
+h1,
+.h1 {
+  font-size: 2em;
+  font-weight: 700;
+}
+h2,
+.h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+h3,
+.h3 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+h4,
+.h4 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+i,
+em {
+  font-style: italic;
+}
+b,
+strong {
+  font-weight: bold;
+}
+code,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+small {
+  font-size: 80%;
+}
+blockquote {
+  font-size: 2rem;
+  p {
+    font-size: 2rem;
+    &:before {
+      content: "“";
+    }
+  }
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="date"],
+select,
+textarea {
+  font-size: 1em;
+  appearance: none;
+  padding: 0.5em 1em;
+  border: 1px solid;
+  border-radius: 0;
+  font-family: $font-main;
+}
+select {
+  background-repeat: no-repeat;
+  background-position: 95%;
+  background-size: 18px;
+  padding-right: 30px;
+}

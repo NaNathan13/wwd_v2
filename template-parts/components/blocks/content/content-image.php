@@ -1,1 +1,0 @@
-<img src="<?php echo get_sub_field('image')['url'] ?>" <?php if(get_sub_field('lazy_load')) { echo "loading='lazy'";} ?> alt="">

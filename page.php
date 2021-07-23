@@ -18,7 +18,7 @@ get_header();
 
 <main id="primary" class="site-main single_post_main">
 	<div class="page_wrapper ">
-		<?php get_template_part('template-parts/acf_block_declaration'); ?>
+		<?php get_template_part('inc/acf_block_declaration'); ?>
 	</div>
 </main>
 
